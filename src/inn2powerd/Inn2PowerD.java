@@ -15,13 +15,11 @@ import javafx.stage.Stage;
  *
  * @author ddose
  */
-public class Inn2PowerD extends Application
-{
+public class Inn2PowerD extends Application {
 
     @Override
-    public void start(Stage stage) throws Exception
-    {
-        Parent root = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("GUI/MainWindow.fxml"));
 
         Scene scene = new Scene(root);
 
@@ -32,8 +30,7 @@ public class Inn2PowerD extends Application
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 
