@@ -7,7 +7,6 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -51,25 +50,7 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-shape: null;">
                     <children>
-                        <Accordion focusTraversable="false" prefHeight="600.0" prefWidth="500.0" scaleShape="false">
-                            <panes>
-                                <TitledPane minHeight="-Infinity" text="Company 1">
-                                    <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" />
-                                    </content>
-                                </TitledPane>
-                                <TitledPane minHeight="-Infinity" text="Company 2">
-                                    <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                    </content>
-                                </TitledPane>
-                                <TitledPane minHeight="-Infinity" text="Company 3">
-                                    <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                    </content>
-                                </TitledPane>
-                            </panes>
-                        </Accordion>
+                        <Accordion fx:id="tpaneName" focusTraversable="false" prefHeight="600.0" prefWidth="500.0" scaleShape="false" />
                     </children>
                 </AnchorPane>
             </content>
