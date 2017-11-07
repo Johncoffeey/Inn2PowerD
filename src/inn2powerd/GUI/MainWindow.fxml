@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inn2powerd.GUI.MainWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inn2powerd.GUI.MainWindowController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Separator layoutX="500.0" orientation="VERTICAL" prefHeight="600.0" />
+        <Separator layoutX="500.0" layoutY="150.0" prefHeight="0.0" prefWidth="300.0" />
+        <VBox layoutX="520.0" layoutY="41.0" prefHeight="80.0" prefWidth="280.0" spacing="15.0">
+            <children>
+                <Label prefHeight="25.0" prefWidth="125.0" text="Company name">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="94.0" prefWidth="366.0" spacing="15.0">
+                    <children>
+                        <TextField prefHeight="25.0" prefWidth="217.0" promptText="Enter your company name here...." />
+                        <Button mnemonicParsing="false" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Søg" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox layoutX="520.0" layoutY="172.0" prefHeight="240.0" prefWidth="280.0" spacing="15.0">
+            <children>
+                <Label text="Filters">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <CheckBox mnemonicParsing="false" text="Location" />
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+            </children>
+        </VBox>
+        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" prefHeight="600.0" prefWidth="500.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-shape: null;">
+                    <children>
+                        <Accordion focusTraversable="false" prefHeight="600.0" prefWidth="500.0" scaleShape="false">
+                            <panes>
+                                <TitledPane minHeight="-Infinity" text="Company 1">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" />
+                                    </content>
+                                </TitledPane>
+                                <TitledPane minHeight="-Infinity" text="Company 2">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                </TitledPane>
+                                <TitledPane minHeight="-Infinity" text="Company 3">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                </TitledPane>
+                            </panes>
+                        </Accordion>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
     </children>
 </AnchorPane>
