@@ -46,7 +46,7 @@
                 <CheckBox mnemonicParsing="false" text="CheckBox" />
             </children>
         </VBox>
-        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" prefHeight="600.0" prefWidth="500.0">
+        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" prefHeight="600.0" prefWidth="500.0" style="-fx-background-insets: 0;">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-shape: null;">
                     <children>

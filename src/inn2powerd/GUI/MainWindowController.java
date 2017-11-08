@@ -6,7 +6,6 @@
 package inn2powerd.GUI;
 
 import dal.CompanyDAO;
-import inn2powerd.BLL.BLLManager;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -21,6 +20,7 @@ import javafx.scene.control.Accordion;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -33,15 +33,11 @@ public class MainWindowController implements Initializable
     @FXML
     private Accordion tpaneName;
 
-    BLLManager bllManager = new BLLManager();
+//    BLLManager bllManager = new BLLManager();
     @FXML
     private AnchorPane tableCompanies;
 
-    private void handleButtonAction(ActionEvent event)
-    {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
+    
 
     @Override
     public void initialize(URL url, ResourceBundle rb)
@@ -58,7 +54,11 @@ public class MainWindowController implements Initializable
             List<be.Company> list = cDAO.getAllCompanies();
             for (be.Company company : list)
             {
-                TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), FXMLLoader.load(getClass().getResource("CompanyInfoWindow.fxml")));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("CompanyInfoWindow.fxml"));
+                Pane infoWindow = loader.load();
+                CompanyInfoWindowController CIWC = loader.getController();
+                CIWC.setCompany(company);
+                TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
                 tpaneName.getPanes().add(pane);
             }
 
