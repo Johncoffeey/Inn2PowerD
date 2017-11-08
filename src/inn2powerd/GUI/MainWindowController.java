@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -45,11 +44,7 @@ public class MainWindowController implements Initializable
 
         try
         {
-            // Tilføj pane
-            //TitledPane pane = new TitledPane("Test", new Button("B1"));
-            // tpaneName.getPanes().add(pane);
-
-            // Gtét company list
+            
             CompanyDAO cDAO = new CompanyDAO();
             List<be.Company> list = cDAO.getAllCompanies();
             for (be.Company company : list)

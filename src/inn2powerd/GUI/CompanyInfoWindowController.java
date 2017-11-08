@@ -21,15 +21,37 @@ public class CompanyInfoWindowController implements Initializable
 {
 
     private Company company;
+    @FXML
+    private Label lblCID;
+    @FXML
+    private Label lblCCountry;
+    @FXML
+    private Label lblCAddress;
+    @FXML
+    private Label lblCWebsite;
+    @FXML
+    private Label lblCSME;
+    @FXML
+    private Label lblCLongitude;
+    @FXML
+    private Label lblCLatitude;
+    @FXML
+    private Label lblCName;
 
     public void setCompany(Company company) {
         this.company = company;
         lblCName.setText(company.getName());
+        lblCID.setText(Integer.toString(company.getId()));
+        lblCCountry.setText(company.getCountry());
+        lblCAddress.setText(company.getAddress());
+        lblCWebsite.setText(company.getWebsite());
+        lblCSME.setText(Integer.toString(company.getIsSME()));
+        lblCLongitude.setText(Double.toString(company.getLng()));
+        lblCLatitude.setText(Double.toString(company.getLat()));
+        
     }
     
     
-    @FXML
-    private Label lblCName;
 
     /**
      * Initializes the controller class.
