@@ -6,23 +6,20 @@
 package inn2powerd.GUI;
 
 import dal.CompanyDAO;
-import inn2powerd.BE.Company;
 import inn2powerd.BLL.BLLManager;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Accordion;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -61,7 +58,7 @@ public class MainWindowController implements Initializable
             List<be.Company> list = cDAO.getAllCompanies();
             for (be.Company company : list)
             {
-                TitledPane pane = new TitledPane(company.getName(), new AnchorPane());
+                TitledPane pane = new TitledPane(company.getName(), FXMLLoader.load(getClass().getResource("CompanyInfoWindow.fxml")));
                 tpaneName.getPanes().add(pane);
             }
 
