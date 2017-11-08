@@ -58,7 +58,7 @@ public class MainWindowController implements Initializable
             List<be.Company> list = cDAO.getAllCompanies();
             for (be.Company company : list)
             {
-                TitledPane pane = new TitledPane(company.getName(), FXMLLoader.load(getClass().getResource("CompanyInfoWindow.fxml")));
+                TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), FXMLLoader.load(getClass().getResource("CompanyInfoWindow.fxml")));
                 tpaneName.getPanes().add(pane);
             }
 
