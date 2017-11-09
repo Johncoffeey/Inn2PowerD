@@ -50,7 +50,7 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-shape: null;">
                     <children>
-                        <Accordion fx:id="tpaneName" focusTraversable="false" prefHeight="600.0" prefWidth="500.0" scaleShape="false" />
+                        <Accordion fx:id="tPanes" focusTraversable="false" prefHeight="600.0" prefWidth="500.0" scaleShape="false" />
                     </children>
                 </AnchorPane>
             </content>

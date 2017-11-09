@@ -30,7 +30,7 @@ public class MainWindowController implements Initializable
 
     private Label label;
     @FXML
-    private Accordion tpaneName;
+    private Accordion tPanes;
 
 //    BLLManager bllManager = new BLLManager();
     @FXML
@@ -54,7 +54,9 @@ public class MainWindowController implements Initializable
                 CompanyInfoWindowController CIWC = loader.getController();
                 CIWC.setCompany(company);
                 TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
-                tpaneName.getPanes().add(pane);
+                tPanes.getPanes().add(pane);
+                
+                System.out.println(company.getCountry());
             }
 
             //loadAllCompanies();
@@ -64,9 +66,9 @@ public class MainWindowController implements Initializable
         }
     }
 
-    public void loadAllCompanies()
+    public void hashmap()
     {
-        //tableCompanies.setItems(bllManager.getAllCompanies());
+        
     }
 
 }
