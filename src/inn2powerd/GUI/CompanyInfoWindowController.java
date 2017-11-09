@@ -11,14 +11,15 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 
 /**
  * FXML Controller class
  *
  * @author ddose
  */
-public class CompanyInfoWindowController implements Initializable
-{
+public class CompanyInfoWindowController implements Initializable {
 
     private Company company;
     @FXML
@@ -37,6 +38,8 @@ public class CompanyInfoWindowController implements Initializable
     private Label lblCLatitude;
     @FXML
     private Label lblCName;
+    @FXML
+    private WebView WVLocation;
 
     public void setCompany(Company company) {
         this.company = company;
@@ -48,18 +51,20 @@ public class CompanyInfoWindowController implements Initializable
         lblCSME.setText(Integer.toString(company.getIsSME()));
         lblCLongitude.setText(Double.toString(company.getLng()));
         lblCLatitude.setText(Double.toString(company.getLat()));
-        
+
+
+//        WebEngine engine = WVLocation.getEngine();
+//        final URL urlGoogleMaps = getClass().getResource("maps.html");
+//        engine.load(urlGoogleMaps.toExternalForm());
+
     }
-    
-    
 
     /**
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb)
-    {
-        
+    public void initialize(URL url, ResourceBundle rb) {
+
     }
 
 }
