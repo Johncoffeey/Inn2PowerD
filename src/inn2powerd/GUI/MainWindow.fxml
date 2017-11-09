@@ -25,13 +25,13 @@
                 </Label>
                 <HBox prefHeight="94.0" prefWidth="366.0" spacing="15.0">
                     <children>
-                        <TextField prefHeight="25.0" prefWidth="217.0" promptText="Enter your company name here...." />
-                        <Button mnemonicParsing="false" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Søg" />
+                        <TextField fx:id="txtQuery" prefHeight="25.0" prefWidth="217.0" promptText="Enter your company name here...." />
+                        <Button mnemonicParsing="false" onAction="#handleSearch" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Søg" />
                     </children>
                 </HBox>
             </children>
         </VBox>
-        <VBox layoutX="520.0" layoutY="172.0" prefHeight="240.0" prefWidth="280.0" spacing="15.0">
+        <VBox layoutX="510.0" layoutY="169.0" prefHeight="240.0" prefWidth="280.0" spacing="15.0">
             <children>
                 <Label text="Filters">
                     <font>
