@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 /**
@@ -51,11 +52,51 @@ public class CompanyInfoWindowController implements Initializable {
         lblCLongitude.setText(Double.toString(company.getLng()));
         lblCLatitude.setText(Double.toString(company.getLat()));
 
+    }
 
-//        WebEngine engine = WVLocation.getEngine();
-//        final URL urlGoogleMaps = getClass().getResource("maps.html");
-//        engine.load(urlGoogleMaps.toExternalForm());
+    public void showMap() {
 
+        WebEngine engine = WVLocation.getEngine();
+        engine.loadContent("<!DOCTYPE html>\n"
+                + "<html>\n"
+                + "    <head>\n"
+                + "        <style>\n"
+                + "            #map {\n"
+                + "                height: 200px;\n"
+                + "                width: 100%;\n"
+                + "            }\n"
+                + "            html, \n"
+                + "            body {\n"
+                + "                height: 200px;\n"
+                + "                background-color:#F4F4F4;\n"
+                + "            }\n"
+                + "        </style>\n"
+                + "    </head>\n"
+                + "    <body> \n"
+                + "        <div id=\"map\"></div>\n"
+                + "        <script>\n"
+                + "            function initMap() {\n"
+                + "            var uluru = {lat: " + company.getLat() + ", lng: " + company.getLng() + "};\n"
+                + "            var map = new google.maps.Map(document.getElementById('map'), {\n"
+                + "            zoom: 9,\n"
+                + "            center: uluru\n"
+                + "            });\n"
+                + "            var marker = new google.maps.Marker({\n"
+                + "            position: uluru,\n"
+                + "            map: map\n"
+                + "            });\n"
+                + "            }\n"
+                + "        </script>\n"
+                + "        <script async defer\n"
+                + "                src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyBj0bQK6TqjApmhvVr5kVh2avIm-cZ4JEM&callback=initMap\">\n"
+                + "        </script>\n"
+                + "    </body>\n"
+                + "</html>");
+    }
+
+    public void hideMap() {
+        WebEngine engine = WVLocation.getEngine();
+        engine.load(null);
     }
 
     /**

@@ -25,6 +25,8 @@ public class Inn2PowerD extends Application {
 
         stage.setScene(scene);
         stage.show();
+        stage.setTitle("Inn2POWER");
+        stage.setResizable(false);
     }
 
     /**

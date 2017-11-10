@@ -12,63 +12,107 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Accordion;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 /**
  *
  * @author ddose
  */
-public class MainWindowController implements Initializable
-{
+public class MainWindowController implements Initializable {
+
+    public String getName;
+    public String getID;
 
     private Label label;
     @FXML
     private Accordion tPanes;
-
-//    BLLManager bllManager = new BLLManager();
     @FXML
-    private AnchorPane tableCompanies;
-
-    
+    private TextField txtText;
+    @FXML
+    private Button btnSearch;
 
     @Override
-    public void initialize(URL url, ResourceBundle rb)
-    {
+    public void initialize(URL url, ResourceBundle rb) {
 
-        try
-        {
-            
+        try {
+
             CompanyDAO cDAO = new CompanyDAO();
             List<be.Company> list = cDAO.getAllCompanies();
-            for (be.Company company : list)
-            {
+            for (be.Company company : list) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("CompanyInfoWindow.fxml"));
                 Pane infoWindow = loader.load();
                 CompanyInfoWindowController CIWC = loader.getController();
                 CIWC.setCompany(company);
                 TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
                 tPanes.getPanes().add(pane);
-                
-                System.out.println(company.getCountry());
+
+                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
+                    if (isNowExpanded) {
+                        CIWC.showMap();
+                    }
+                });
+                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
+                    if (wasExpanded) {
+                        CIWC.hideMap();
+                    }
+                });
+
             }
 
             //loadAllCompanies();
-        } catch (IOException ex)
-        {
+        } catch (IOException ex) {
             Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
-    public void hashmap()
-    {
-        
+    @FXML
+    private void search(ActionEvent event) {
+
+        try {
+            CompanyDAO cDAO = new CompanyDAO();
+            List<be.Company> list = cDAO.getAllCompanies();
+
+            tPanes.getPanes().remove(0, tPanes.getPanes().size()); // Ask Stegger about this
+
+            for (be.Company company : list) {
+                getName = company.getName();
+                getID = Integer.toString(company.getId());
+
+                if (getName.toLowerCase().contains(txtText.getText().toLowerCase().trim()) || getID.equals(txtText.getText().trim())) {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("CompanyInfoWindow.fxml"));
+                    Pane infoWindow = loader.load();
+                    CompanyInfoWindowController CIWC = loader.getController();
+                    TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
+                    CIWC.setCompany(company);
+                    tPanes.getPanes().add(pane);
+
+                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
+                        if (isNowExpanded) {
+                            CIWC.showMap();
+                        }
+                    });
+                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
+                        if (wasExpanded) {
+                            CIWC.hideMap();
+                        }
+                    });
+                }
+            }
+
+            System.out.println("Number of results: " + tPanes.getPanes().size());
+
+        } catch (IOException ex) {
+            Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }
