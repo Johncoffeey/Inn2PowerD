@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package inn2powerd.GUI;
+package inn2powerd.GUI.Controller;
 
-import dal.CompanyDAO;
+import inn2powerd.BE.Company;
+import inn2powerd.DAL.DataManager;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -27,7 +28,8 @@ import javafx.scene.layout.Pane;
  *
  * @author ddose
  */
-public class MainWindowController implements Initializable {
+public class MainWindowController implements Initializable
+{
 
     public String getName;
     public String getID;
@@ -41,67 +43,82 @@ public class MainWindowController implements Initializable {
     private Button btnSearch;
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(URL url, ResourceBundle rb)
+    {
 
-        try {
+        try
+        {
 
-            CompanyDAO cDAO = new CompanyDAO();
-            List<be.Company> list = cDAO.getAllCompanies();
-            for (be.Company company : list) {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("CompanyInfoWindow.fxml"));
+            DataManager dm = new DataManager();
+            List<Company> list = dm.getAllCompanies();
+            for (Company company : list)
+            {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/inn2powerd/GUI/View/CompanyInfoWindow.fxml"));
                 Pane infoWindow = loader.load();
                 CompanyInfoWindowController CIWC = loader.getController();
                 CIWC.setCompany(company);
                 TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
                 tPanes.getPanes().add(pane);
 
-                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
-                    if (isNowExpanded) {
+                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) ->
+                {
+                    if (isNowExpanded)
+                    {
                         CIWC.showMap();
                     }
                 });
-                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
-                    if (wasExpanded) {
+                pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) ->
+                {
+                    if (wasExpanded)
+                    {
                         CIWC.hideMap();
                     }
                 });
-
             }
 
             //loadAllCompanies();
-        } catch (IOException ex) {
-            Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex)
+        {
+//            Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     @FXML
-    private void search(ActionEvent event) {
-
-        try {
-            CompanyDAO cDAO = new CompanyDAO();
-            List<be.Company> list = cDAO.getAllCompanies();
+    private void handleSearch(ActionEvent event)
+    {
+        try
+        {
+            DataManager dm = new DataManager();
+            List<Company> list = dm.getAllCompanies();
 
             tPanes.getPanes().remove(0, tPanes.getPanes().size()); // Ask Stegger about this
 
-            for (be.Company company : list) {
+            for (Company company : list)
+            {
                 getName = company.getName();
                 getID = Integer.toString(company.getId());
 
-                if (getName.toLowerCase().contains(txtText.getText().toLowerCase().trim()) || getID.equals(txtText.getText().trim())) {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("CompanyInfoWindow.fxml"));
+                if (getName.toLowerCase().contains(txtText.getText().toLowerCase().trim()) || getID.equals(txtText.getText().trim()))
+
+                {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/inn2powerd/GUI/View/CompanyInfoWindow.fxml"));
                     Pane infoWindow = loader.load();
                     CompanyInfoWindowController CIWC = loader.getController();
                     TitledPane pane = new TitledPane(company.getId() + "   -   " + company.getName(), infoWindow);
                     CIWC.setCompany(company);
                     tPanes.getPanes().add(pane);
 
-                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
-                        if (isNowExpanded) {
+                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) ->
+                    {
+                        if (isNowExpanded)
+                        {
                             CIWC.showMap();
                         }
                     });
-                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) -> {
-                        if (wasExpanded) {
+                    pane.expandedProperty().addListener((obs, wasExpanded, isNowExpanded) ->
+                    {
+                        if (wasExpanded)
+                        {
                             CIWC.hideMap();
                         }
                     });
@@ -110,9 +127,9 @@ public class MainWindowController implements Initializable {
 
             System.out.println("Number of results: " + tPanes.getPanes().size());
 
-        } catch (IOException ex) {
+        } catch (IOException ex)
+        {
             Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }

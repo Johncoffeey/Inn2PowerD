@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package inn2powerd.GUI;
+package inn2powerd.GUI.Controller;
 
-import be.Company;
+import inn2powerd.BE.Company;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -19,7 +19,8 @@ import javafx.scene.web.WebView;
  *
  * @author ddose
  */
-public class CompanyInfoWindowController implements Initializable {
+public class CompanyInfoWindowController implements Initializable
+{
 
     private Company company;
     @FXML
@@ -41,7 +42,8 @@ public class CompanyInfoWindowController implements Initializable {
     @FXML
     private WebView WVLocation;
 
-    public void setCompany(Company company) {
+    public void setCompany(Company company)
+    {
         this.company = company;
         lblCName.setText(company.getName());
         lblCID.setText(Integer.toString(company.getId()));
@@ -54,7 +56,8 @@ public class CompanyInfoWindowController implements Initializable {
 
     }
 
-    public void showMap() {
+    public void showMap()
+    {
 
         WebEngine engine = WVLocation.getEngine();
         engine.loadContent("<!DOCTYPE html>\n"
@@ -94,7 +97,8 @@ public class CompanyInfoWindowController implements Initializable {
                 + "</html>");
     }
 
-    public void hideMap() {
+    public void hideMap()
+    {
         WebEngine engine = WVLocation.getEngine();
         engine.load(null);
     }
@@ -103,7 +107,8 @@ public class CompanyInfoWindowController implements Initializable {
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(URL url, ResourceBundle rb)
+    {
 
     }
 

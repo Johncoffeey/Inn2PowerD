@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inn2powerd.GUI.MainWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inn2powerd.GUI.Controller.MainWindowController">
     <children>
         <Separator layoutX="500.0" orientation="VERTICAL" prefHeight="600.0" />
         <Separator layoutX="500.0" layoutY="150.0" prefHeight="0.0" prefWidth="300.0" />
@@ -25,8 +25,8 @@
                 </Label>
                 <HBox prefHeight="94.0" prefWidth="366.0" spacing="15.0">
                     <children>
-                        <TextField fx:id="txtText" onAction="#search" prefHeight="25.0" prefWidth="217.0" promptText="Enter your company name here...." />
-                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#search" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Søg" />
+                        <TextField fx:id="txtText" onAction="#handleSearch" prefHeight="25.0" prefWidth="217.0" promptText="Enter your company name here...." />
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#handleSearch" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Søg" />
                     </children>
                 </HBox>
             </children>
