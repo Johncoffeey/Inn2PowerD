@@ -7,6 +7,11 @@ package inn2powerd.GUI.Controller;
 
 import inn2powerd.BE.Company;
 import inn2powerd.DAL.DataManager;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -17,12 +22,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 /**
  *
@@ -41,6 +50,8 @@ public class MainWindowController implements Initializable
     private TextField txtText;
     @FXML
     private Button btnSearch;
+    @FXML
+    private TextField txtDeleteCompany;
 
     @Override
     public void initialize(URL url, ResourceBundle rb)
@@ -86,6 +97,7 @@ public class MainWindowController implements Initializable
     @FXML
     private void handleSearch(ActionEvent event)
     {
+
         try
         {
             DataManager dm = new DataManager();
@@ -131,5 +143,51 @@ public class MainWindowController implements Initializable
         {
             Logger.getLogger(MainWindowController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+    }
+
+    @FXML
+    private void handleAddCompany(ActionEvent event) throws IOException
+    {
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("/inn2powerd/GUI/View/AddCompanyWindow.fxml"));
+        Parent root = (Parent) fxmlLoader1.load();
+        Stage stage = new Stage();
+        stage.setTitle("Add company");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
+    private void handleDeleteCompany(ActionEvent event) throws FileNotFoundException, IOException
+    {
+//
+//        try
+//        {
+//            BufferedWriter writer = new BufferedWriter(new FileWriter("companiess.csv"));
+//
+//            BufferedReader CSVFile = new BufferedReader(new FileReader("companies.csv"));
+//
+//            String line = CSVFile.readLine();
+//            while (line != null)
+//            {
+//                String[] linesplit = line.split(",");
+//                if (linesplit[0].equals(txtDeleteCompany.getText().trim()))
+//                {
+//                    System.out.println(line);
+//
+//                } else
+//                {
+//                    writer.write(line);
+//                    writer.newLine();
+//                }
+//                line = CSVFile.readLine();
+//            }
+//
+//        } catch (IOException e)
+//        {
+//            System.out.println(e);
+//        }
+//
     }
 }

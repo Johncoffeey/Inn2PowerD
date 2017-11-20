@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inn2powerd.GUI.Controller.AddCompanyWindowController">
+   <children>
+      <TextField fx:id="txtId" layoutX="25.0" layoutY="26.0" promptText="Enter here..." />
+      <TextField fx:id="txtName" layoutX="25.0" layoutY="74.0" promptText="Enter here..." />
+      <TextField fx:id="txtCountry" layoutX="25.0" layoutY="121.0" promptText="Enter here..." />
+      <TextField fx:id="txtAddress" layoutX="25.0" layoutY="168.0" promptText="Enter here..." />
+      <TextField fx:id="txtWebsite" layoutX="25.0" layoutY="215.0" promptText="Enter here..." />
+      <TextField fx:id="txtLatitude" layoutX="25.0" layoutY="262.0" promptText="Enter here..." />
+      <TextField fx:id="txtLongitude" layoutX="25.0" layoutY="309.0" promptText="Enter here..." />
+      <TextField fx:id="txtIsSME" layoutX="25.0" layoutY="355.0" promptText="Enter here..." />
+      <Button fx:id="btnAddCompanyClose" layoutX="54.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleWrittingToCompaniesFile" text="Add Company" />
+      <Label layoutX="25.0" layoutY="8.0" text="Id" />
+      <Label layoutX="25.0" layoutY="57.0" text="Name" />
+      <Label layoutX="27.0" layoutY="104.0" text="Country" />
+      <Label layoutX="27.0" layoutY="151.0" text="Address" />
+      <Label layoutX="26.0" layoutY="199.0" text="Website" />
+      <Label layoutX="27.0" layoutY="245.0" text="Latitude" />
+      <Label layoutX="27.0" layoutY="293.0" text="Longitude" />
+      <Label layoutX="27.0" layoutY="338.0" text="IsSME" />
+   </children>
+</AnchorPane>

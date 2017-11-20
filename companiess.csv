@@ -3,7 +3,6 @@ id,name,country,address,website,lat,lng,isSME
 2,Wunsch LLC,Armenia,25 Texas Circle,https://microsoft.com/lorem/ipsum/dolor.js,40.4670674,44.7899209,0
 3,Abbott LLC,Democratic Republic of the Congo,01 Columbus Drive,http://discovery.com/condimentum/id/luctus.png,-6.1306709,23.5966577,1
 4,Rolfson Barton and Smitham,Portugal,46294 Northfield Drive,http://telegraph.co.uk/curabitur/in/libero/ut.xml,39.4381452,-8.5116903,1
-5,Huel Group,Brazil,01 Sheridan Drive,https://artisteer.com/suspendisse/potenti/in.png,-19.4878116,-46.5450499,0
 6,Gutkowski White and Wisozk,Russia,05320 Larry Drive,https://whitehouse.gov/quis/orci/nullam.aspx,55.6117934,38.8503123,1
 "7,""Homenick, Keeling and Schuppe"",Netherlands,5413 Birchwood Hill,http://hugedomains.com/metus/sapien.xml,51.9701203,5.9409472,0"
 8,Smitham-Upton,Peru,70 Hoard Point,http://cnbc.com/quisque/arcu/libero/rutrum/ac.html,-6.6712034,-78.7383574,-1
@@ -907,101 +906,4 @@ id,name,country,address,website,lat,lng,isSME
 906,Runolfsdottir-Grady,China,3962 Algoma Place,https://twitpic.com/consequat/morbi/a/ipsum/integer.aspx,36.284107,100.620031,0
 907,Kilback Inc,Brazil,1 Scott Pass,https://kickstarter.com/pretium/quis/lectus/suspendisse.jpg,-18.2417866,-43.6035055,-1
 908,Zieme LLC,Sweden,68 Donald Park,http://economist.com/et/ultrices/posuere.xml,59.3409629,18.0669843,0
-909,Bins LLC,Philippines,97832 Division Center,http://mozilla.com/consequat/lectus/in/est/risus/auctor/sed.xml,14.6511524,121.0314508,1
-910,Gorczany-Beahan,China,973 Schurz Circle,https://fastcompany.com/ipsum.jsp,21.547821,107.971826,1
-911,Walsh-Rosenbaum,China,553 Butterfield Street,https://hp.com/quisque/id.xml,40.6238989,122.5200228,-1
-912,Wunsch-Dach,China,61 Ridgeview Terrace,https://opera.com/ut/nulla.js,39.974179,116.293727,1
-"913,""Wunsch, Russel and Harvey"",Sweden,61158 Knutson Park,https://gmpg.org/eget/eleifend/luctus/ultricies.png,58.4922889,15.5029738,0"
-914,Jacobson-Walsh,Greece,7 Weeping Birch Place,http://microsoft.com/viverra/eget/congue/eget/semper.jpg,40.0480392,23.4134501,-1
-915,Mueller-Labadie,China,5705 Waubesa Terrace,http://1688.com/posuere/cubilia/curae/mauris/viverra.json,28.6909216,113.5978392,-1
-"916,""Runolfsdottir, Dickinson and Lebsack"",Indonesia,07330 Mccormick Court,http://t-online.de/turpis/integer/aliquet/massa/id/lobortis.xml,-7.2679917,112.6626281,0"
-"917,""Klein, Baumbach and Paucek"",Indonesia,45147 Swallow Park,https://jigsy.com/nunc/commodo/placerat/praesent.png,-8.0993,111.9161,0"
-918,Raynor-Ryan,China,59 Boyd Plaza,https://webmd.com/amet/nulla/quisque/arcu/libero/rutrum/ac.json,26.888665,112.616612,-1
-919,McDermott LLC,Sweden,6 Parkside Junction,https://chron.com/pellentesque/ultrices/phasellus/id/sapien/in.xml,59.4015532,18.3427724,0
-920,Kshlerin-Reinger,China,690 Hollow Ridge Place,https://whitehouse.gov/nunc/viverra/dapibus.js,23.112257,114.415801,-1
-921,Baumbach LLC,China,14365 Mccormick Center,https://geocities.jp/sapien/in.json,26.534726,119.326773,1
-"922,""Will, Gusikowski and Ferry"",Latvia,147 Arkansas Point,http://mapy.cz/semper/est/quam.png,56.5930499,25.2431539,-1"
-923,Wilderman-Breitenberg,Brazil,1 Cascade Hill,https://tripadvisor.com/tristique/est/et/tempus/semper/est/quam.png,-21.1379949,-47.990137,-1
-924,Yundt-Fritsch,Brazil,66908 Mockingbird Avenue,http://tripod.com/id/turpis/integer/aliquet/massa/id/lobortis.jpg,-8.3748772,-35.4551341,0
-925,Auer Inc,Brazil,65 Eastwood Trail,http://delicious.com/nulla/tellus.png,-7.4157126,-38.0843008,0
-926,Leuschke LLC,United States,31 Main Hill,http://paginegialle.it/rutrum/rutrum/neque/aenean.png,37.8336281,-122.2029832,1
-927,Anderson-Schaefer,Poland,93109 Glendale Avenue,https://pen.io/ipsum/primis/in/faucibus/orci/luctus.json,49.8405384,19.5082319,-1
-928,Blanda Group,China,16 Meadow Vale Road,https://free.fr/quis/justo/maecenas/rhoncus/aliquam/lacus.aspx,26.079079,113.950153,-1
-929,O'Kon-Kunze,Afghanistan,6 Northland Drive,http://artisteer.com/quam/a.xml,32.7778898,61.6567273,0
-930,Denesik Group,China,0861 Meadow Ridge Court,http://t.co/turpis.aspx,35.87616,102.801062,0
-"931,""Doyle, Botsford and Nikolaus"",Ukraine,994 Tennessee Road,http://creativecommons.org/luctus/et/ultrices/posuere/cubilia/curae/mauris.xml,46.3601437,32.3522621,-1"
-"932,""Bartoletti, Kub and Armstrong"",China,1 Dixon Parkway,https://oaic.gov.au/vestibulum/aliquet/ultrices/erat/tortor/sollicitudin/mi.aspx,22.676245,113.418215,1"
-"933,""Conroy, Prosacco and Kling"",Puerto Rico,3778 Bluejay Crossing,https://ted.com/justo/maecenas/rhoncus/aliquam/lacus.aspx,18.3822991,-66.1221928,1"
-934,Adams LLC,China,7635 Duke Plaza,https://wisc.edu/lobortis/convallis/tortor.html,28.520684,112.140063,0
-935,Boyer-King,Czech Republic,36586 Londonderry Alley,http://cnet.com/parturient/montes.aspx,49.12249,15.8681689,0
-936,Gottlieb-Wilderman,Indonesia,3 Melrose Pass,https://cisco.com/purus/sit.jpg,-8.781054,115.165807,1
-937,Gibson and Sons,Russia,7 Sutteridge Center,https://oracle.com/amet/cursus/id/turpis/integer/aliquet/massa.html,55.619557,37.754824,-1
-938,Schiller-Herzog,Indonesia,44 Hollow Ridge Parkway,https://marketwatch.com/nec/nisi/volutpat/eleifend.png,-6.5961314,106.8093807,1
-"939,""Kunde, Robel and Osinski"",Luxembourg,781 Superior Parkway,http://cocolog-nifty.com/ipsum/primis/in/faucibus/orci/luctus/et.json,49.9672504,5.8900588,0"
-940,Cremin-Schuppe,China,07 Mendota Street,http://alibaba.com/fringilla/rhoncus/mauris/enim/leo/rhoncus.html,51.79909,124.537673,0
-"941,""Reinger, Sporer and Hettinger"",Indonesia,315 Meadow Vale Crossing,https://about.com/odio/cras/mi/pede.png,-6.8575149,107.6422488,1"
-"942,""Glover, Kuphal and Weissnat"",Brazil,35 Debra Pass,https://discovery.com/ipsum/primis/in/faucibus/orci/luctus/et.png,-4.5848377,-42.8572386,1"
-943,Nicolas and Sons,Greece,7 Texas Alley,http://163.com/et.jpg,37.0507794,22.0083727,-1
-944,Kunde Group,Philippines,31 Fieldstone Parkway,https://eventbrite.com/eu/magna/vulputate/luctus.js,7.160227,125.05806,0
-945,Smith-Koelpin,France,8 Calypso Park,https://linkedin.com/ultrices/erat.jsp,48.732568,2.2889821,0
-946,Lindgren and Sons,China,0624 Namekagon Plaza,http://diigo.com/in.jsp,36.878124,102.149548,0
-947,Cassin LLC,Sweden,62 Browning Hill,https://t.co/luctus/et/ultrices/posuere.jsp,56.9940675,13.209918,0
-948,Hand-Blick,China,0 John Wall Street,http://de.vu/mattis/pulvinar/nulla/pede/ullamcorper/augue.json,45.273298,127.504166,1
-"949,""Sawayn, Kozey and Hahn"",Hungary,48122 Katie Plaza,http://amazon.com/in.html,47.5202786,17.5142121,-1"
-"950,""Mueller, Gerlach and Wisoky"",Russia,83151 Graedel Lane,https://alexa.com/in/hac/habitasse.png,51.6269724,41.1342102,1"
-951,Baumbach-Daniel,Croatia,3625 Lawn Terrace,https://census.gov/volutpat/in/congue/etiam/justo.json,44.8278003,14.7318165,-1
-952,Fahey LLC,Montenegro,1 Melby Way,https://cornell.edu/venenatis/lacinia/aenean/sit/amet/justo/morbi.jpg,42.0912106,19.089904,-1
-953,Feil Group,Belgium,29110 Mockingbird Parkway,http://bandcamp.com/amet/diam/in/magna/bibendum.js,50.585206,3.3300918,0
-954,Douglas Inc,Poland,1610 Larry Terrace,http://tamu.edu/semper/interdum/mauris/ullamcorper.png,49.86686,19.67676,-1
-955,Altenwerth-Howell,Indonesia,39001 Oriole Crossing,http://bandcamp.com/auctor/sed/tristique/in/tempus.html,-7.1072394,109.011884,0
-956,Schmidt-Fritsch,Colombia,4129 Northport Trail,http://ft.com/ullamcorper/purus/sit/amet/nulla.aspx,10.789771,-74.755201,1
-957,DuBuque and Sons,China,676 Ruskin Trail,https://ft.com/pellentesque.json,24.77848,110.496593,-1
-958,Howell-Krajcik,Costa Rica,92 Lien Park,http://instagram.com/in/quam/fringilla/rhoncus/mauris/enim.jsp,9.477773,-84.2662901,1
-"959,""Koss, Hudson and O'Conner"",Russia,50048 Hanover Point,http://goo.gl/semper.js,56.7952392,105.8855714,-1"
-960,Dicki-Wunsch,Poland,676 Norway Maple Place,http://blogspot.com/non/pretium/quis/lectus/suspendisse.jsp,51.7118861,22.9024512,0
-961,Thiel-Graham,Portugal,96 Hudson Way,https://columbia.edu/integer/aliquet/massa/id/lobortis.jpg,40.0604197,-8.6218634,1
-962,Harber and Sons,Vietnam,55711 Mcguire Alley,https://bluehost.com/sit/amet/turpis/elementum/ligula/vehicula.json,10.6340856,106.947666,-1
-963,Hammes Group,Madagascar,0339 Anthes Hill,http://linkedin.com/mauris/laoreet/ut.xml,-18.8791902,47.5079055,-1
-"964,""Farrell, Hills and Beier"",Portugal,14 Sommers Hill,https://cnn.com/feugiat/non/pretium.aspx,38.3884463,-8.1572713,1"
-965,Lang-Bins,China,34 Northview Parkway,http://ed.gov/morbi/non/lectus/aliquam.png,36.389401,120.44716,0
-966,Pacocha-Howe,Indonesia,4652 Bartelt Plaza,https://godaddy.com/cras/in/purus/eu/magna/vulputate.json,-8.7195657,122.3589285,-1
-967,Franecki Group,Japan,2 Everett Drive,http://theglobeandmail.com/metus/sapien/ut/nunc/vestibulum/ante.aspx,34.0055653,133.5697428,0
-968,Dietrich LLC,Colombia,77615 Linden Court,https://smugmug.com/dictumst/maecenas/ut/massa.png,3.649442,-76.567956,0
-"969,""Hahn, Wolff and Halvorson"",Egypt,441 Brentwood Drive,http://baidu.com/sagittis/dui.xml,31.4175388,31.8144434,-1"
-"970,""Nienow, Schneider and Rempel"",China,952 Bobwhite Junction,http://netlog.com/in/magna/bibendum/imperdiet.jpg,30.439547,119.669425,0"
-971,Dooley Inc,Argentina,21 Washington Road,http://icq.com/amet/consectetuer/adipiscing/elit/proin/interdum/mauris.js,-27.2000865,-54.9815915,0
-972,Kiehn Inc,China,72 Ridge Oak Plaza,https://ed.gov/est/donec/odio.jsp,47.577495,130.828626,0
-973,Cremin-Okuneva,China,787 Donald Place,http://sciencedirect.com/suspendisse/potenti/in/eleifend/quam/a/odio.jsp,28.0896014,108.7986202,-1
-974,Swaniawski-Bahringer,China,5 Fremont Circle,https://indiegogo.com/elit.html,30.190334,122.689752,-1
-975,Kirlin Inc,Indonesia,604 Warrior Alley,http://ovh.net/lectus/vestibulum/quam/sapien/varius/ut/blandit.png,-9.4964,119.2262667,1
-976,Friesen-Strosin,China,2 Darwin Way,http://tripod.com/dui/vel/sem.jsp,31.2289489,121.4584218,0
-977,Borer-Jenkins,Gambia,9861 Daystar Street,https://nature.com/ultrices/posuere/cubilia.png,13.2375414,-14.1959978,-1
-"978,""Jerde, Howell and Greenfelder"",Hong Kong,309 4th Avenue,http://wired.com/in/sapien.png,22.2100066,114.133531,0"
-979,Veum-Mann,Brazil,178 Graceland Street,http://huffingtonpost.com/nec/molestie/sed.html,-5.8248093,-46.1594921,0
-980,Feil LLC,Sweden,7908 Warbler Center,https://umich.edu/mauris/morbi/non/lectus/aliquam.aspx,58.0498372,11.8515576,-1
-981,Hudson Inc,Poland,3346 Lakewood Gardens Hill,http://chicagotribune.com/in/hac/habitasse/platea/dictumst.png,50.2620534,22.4210807,-1
-"982,""Moen, Fadel and Thiel"",Armenia,33400 Burning Wood Court,https://cdc.gov/justo/eu/massa.xml,40.1361855,44.2441818,0"
-983,Watsica LLC,Nigeria,78 Kenwood Trail,http://walmart.com/pharetra/magna/vestibulum.json,6.7702718,7.4300234,-1
-"984,""Marvin, Heathcote and Schuster"",Vietnam,44332 Warrior Trail,http://nhs.uk/vitae/ipsum.aspx,22.3032923,105.876004,-1"
-985,Wunsch-Schinner,China,29797 Sugar Court,http://hao123.com/pulvinar/lobortis/est/phasellus/sit/amet/erat.png,31.264592,121.585315,-1
-986,Gaylord-Shields,China,4748 Lotheville Plaza,http://reference.com/tellus/nisi/eu/orci/mauris.js,33.959385,119.563316,-1
-"987,""Gorczany, Heathcote and Pollich"",Poland,5 Packers Pass,https://google.nl/vehicula/consequat/morbi/a/ipsum/integer.js,52.0424689,21.3991045,1"
-988,Anderson-O'Connell,China,5 Buell Trail,https://yelp.com/mus/etiam/vel/augue/vestibulum.html,25.152278,104.241546,-1
-"989,""Conn, Hackett and Brown"",Philippines,4394 Drewry Park,https://hibu.com/in/quam/fringilla.json,5.093026,119.808662,1"
-990,Zulauf-Nolan,China,493 Manitowish Pass,http://uiuc.edu/mi/integer/ac/neque/duis.js,23.0664459,113.1964636,1
-991,Harris and Sons,Russia,735 Waywood Street,http://shop-pro.jp/quisque/ut.xml,58.3971367,56.4158867,1
-"992,""Senger, McDermott and Daugherty"",Namibia,941 Lakewood Circle,https://flickr.com/amet/diam/in/magna.html,-17.6282228,18.6101405,-1"
-"993,""Borer, O'Hara and Nienow"",Indonesia,3572 Farwell Drive,https://msn.com/nonummy/maecenas.jsp,-7.2026914,108.1013637,0"
-994,Marquardt-Kirlin,Philippines,063 Superior Terrace,http://discovery.com/suspendisse/accumsan.jpg,13.9791936,121.7983634,1
-995,Morar-Swift,Czech Republic,35272 Hovde Way,http://woothemes.com/mauris/enim/leo/rhoncus/sed/vestibulum.aspx,49.0226636,17.7792323,0
-996,Schimmel Group,China,919 Lakewood Trail,http://mayoclinic.com/sem/praesent/id/massa/id/nisl.png,32.9454027,-117.2399868,-1
-997,Haag-Crooks,Brazil,8 Hanover Pass,https://etsy.com/nullam/varius/nulla/facilisi/cras.js,-6.3207152,-47.7834888,-1
-"998,""Conn, Langosh and Paucek"",China,6 Namekagon Plaza,http://bizjournals.com/ultrices/phasellus/id/sapien/in.jsp,33.011529,114.022298,-1"
-999,Weber LLC,Panama,711 Messerschmidt Road,http://delicious.com/ipsum/primis/in/faucibus/orci/luctus.aspx,8.4430125,-82.3777335,-1
-1000,Paucek-Kilback,France,370 Larry Circle,http://lulu.com/molestie/nibh/in/lectus/pellentesque/at/nulla.xml,43.5958543,5.1190026,1
-2,Danni Dose,d,d,d,2,2,2
-3,Thomas Bear,d,d,d,2,2,2
-3,ddd,d,d,d,2,2,2
-2,Hest,d,d,d,2,2,2
-3,Test,d,d,d,2,2,2
-0230293,Simzo,s,s,s,1.2,1.1,1
+909,Bins
