@@ -9,25 +9,27 @@ package inn2powerd.BE;
  *
  * @author Danni
  */
-public class Company
-{
+public class Company {
 
     private int id;
     private String name;
     private String country;
     private String address;
     private String website;
+//    private String supplyChainCat;
+//    private String businessRole;
     private double lat;
     private double lng;
     private int isSME;
 
-    public Company(int id, String name, String country, String address, String website, double lat, double lng, int isSME)
-    {
+    public Company(int id, String name, String country, String address, String website, double lat, double lng, int isSME) {
         this.id = id;
         this.name = name;
         this.country = country;
         this.address = address;
         this.website = website;
+//        this.supplyChainCat = supplyChainCat;
+//        this.businessRole = businessRole;
         this.lat = lat;
         this.lng = lng;
         this.isSME = isSME;
@@ -38,8 +40,7 @@ public class Company
      *
      * @return the value of isSME
      */
-    public int getIsSME()
-    {
+    public int getIsSME() {
         return isSME;
     }
 
@@ -48,8 +49,7 @@ public class Company
      *
      * @param isSME new value of isSME
      */
-    public void setIsSME(int isSME)
-    {
+    public void setIsSME(int isSME) {
         this.isSME = isSME;
     }
 
@@ -58,8 +58,7 @@ public class Company
      *
      * @return the value of lng
      */
-    public double getLng()
-    {
+    public double getLng() {
         return lng;
     }
 
@@ -68,8 +67,7 @@ public class Company
      *
      * @param lng new value of lng
      */
-    public void setLng(double lng)
-    {
+    public void setLng(double lng) {
         this.lng = lng;
     }
 
@@ -78,8 +76,7 @@ public class Company
      *
      * @return the value of lat
      */
-    public double getLat()
-    {
+    public double getLat() {
         return lat;
     }
 
@@ -88,8 +85,7 @@ public class Company
      *
      * @param lat new value of lat
      */
-    public void setLat(double lat)
-    {
+    public void setLat(double lat) {
         this.lat = lat;
     }
 
@@ -98,8 +94,7 @@ public class Company
      *
      * @return the value of website
      */
-    public String getWebsite()
-    {
+    public String getWebsite() {
         return this.website;
     }
 
@@ -108,8 +103,7 @@ public class Company
      *
      * @param website new value of website
      */
-    public void setWebsite(String website)
-    {
+    public void setWebsite(String website) {
         this.website = website;
     }
 
@@ -118,8 +112,7 @@ public class Company
      *
      * @return the value of address
      */
-    public String getAddress()
-    {
+    public String getAddress() {
         return address;
     }
 
@@ -128,8 +121,7 @@ public class Company
      *
      * @param address new value of address
      */
-    public void setAddress(String address)
-    {
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -138,8 +130,7 @@ public class Company
      *
      * @return the value of country
      */
-    public String getCountry()
-    {
+    public String getCountry() {
         return country;
     }
 
@@ -148,8 +139,7 @@ public class Company
      *
      * @param country new value of country
      */
-    public void setCountry(String country)
-    {
+    public void setCountry(String country) {
         this.country = country;
     }
 
@@ -158,8 +148,7 @@ public class Company
      *
      * @return the value of name
      */
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
@@ -168,8 +157,7 @@ public class Company
      *
      * @param name new value of name
      */
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -178,8 +166,7 @@ public class Company
      *
      * @return the value of id
      */
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
@@ -188,9 +175,43 @@ public class Company
      *
      * @param id new value of id
      */
-    public void setId(int id)
-    {
+    public void setId(int id) {
         this.id = id;
     }
 
+//    /**
+//     * Get the value of supplyChainCat
+//     *
+//     * @return the value of supplyChainCat
+//     */
+//    public String getSupplyChainCat() {
+//        return supplyChainCat;
+//    }
+//
+//    /**
+//     * Set the value of supplyChainCat
+//     *
+//     * @param supplyChainCat new value of supplyChainCat
+//     */
+//    public void setSupplyChainCat(String supplyChainCat) {
+//        this.supplyChainCat = supplyChainCat;
+//    }
+//
+//    /**
+//     * Get the value of businessRole
+//     *
+//     * @return the value of businessRole
+//     */
+//    public String getBusinessRole() {
+//        return businessRole;
+//    }
+//
+//    /**
+//     * Set the value of businessRole
+//     *
+//     * @param businessRole new value of businessRole
+//     */
+//    public void setBusinessRole(String businessRole) {
+//        this.businessRole = businessRole;
+//    }
 }
